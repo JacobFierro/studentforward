@@ -17,7 +17,7 @@ title: Student Forward
                 <div class="col-sm-4 feature first">
                     <div class="img_box">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.thumb }}">
+                            <img src="/img/posts/{{ post.thumb }}">
                             <span class="circle"> 
                                 <span class="plus">&#43;</span>
                             </span>
@@ -25,7 +25,7 @@ title: Student Forward
                     </div>
                     <div class="text">
                         <h6>{{ post.title }}</h6>
-                        <!-- <p>{{ post.excerpt }}</p> -->
+                        <p>{{ post.date | date_to_string }} </p>
                     </div>
                 </div>
                 {% endfor %}
