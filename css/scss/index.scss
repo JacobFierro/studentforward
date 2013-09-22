@@ -1,3 +1,5 @@
+@import "colors";
+
 /* Main Slider
 -------------------------------------------------- */
 #feature_slider {
@@ -98,21 +100,43 @@
         /* Custom styles for each slide */
 
         /* Slide 1 */
-        &#showcasing {
+        &#scholarship {
             .info {
                 position: absolute;
-                top: 150px;
+                top: 130px;
                 left: 13%;
                 width: 30%;
                 display: none;
                 z-index: 10;
 
                 h2 {
-                    color: #fff;
+                    color: $text-dark;
                     font-size: 50px;
                     font-weight: normal;
                     line-height: 56px;
                     text-shadow: 1px 1px 1px rgb(49, 57, 61);
+                }
+
+                p {
+                    color: $text-dark;
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    background-color: $button-color;
+                    padding: 10px 30px;
+                    font-size: 19px;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    display: inline-block;
+                    -webkit-transition: all .2s linear;
+                    -moz-transition: all .2s linear;
+                    transition: all .2s linear; 
+
+                    &:hover {
+                        background-color: $button-color-hover;
+                    }
                 }
             }
         }
@@ -169,23 +193,27 @@
 
         /* Slide 4 */
 
-        &#responsive {
+        &#mission {
             .info {
                 position: absolute;
-                top: 160px;
+                top: 165px;
                 right: 9%;
-                width: 25%;
+                width: 33%;
 
                 h2 {
-                    color: #fff;
+                    color: $text-dark;
                     font-size: 47px;
                     font-weight: normal;
                     text-shadow: 1px 1px 1px #3b3262;
-                    line-height: 56px;
+                    line-height: 45px;
 
                     strong {
                         font-size: 42px;
                     }
+                }
+
+                p {
+                    color: $text-dark;
                 }
             }
         }
@@ -198,11 +226,23 @@
 
             }
 
+            h3 {
+                color: #fff;
+                font-size: 27px;
+                font-weight: normal;
+                text-shadow: 1px 1px 1px #3b3262;
+                line-height: 30px;
+            }
+
             a {
 
                 &:hover {
                     opacity: .8;
                 } 
+            }
+
+            p {
+                color: $white;
             }
         }
 

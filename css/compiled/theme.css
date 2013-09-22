@@ -357,3 +357,11 @@ header {
         margin: 0 30px 0 0; }
   #footer .credits {
     margin-top: 20px; } }
+
+/* Globals
+-------------------------------------------------- */
+.boxshadow {
+  -moz-box-shadow:    1px 1px 3px 3px #ddd;
+  -webkit-box-shadow: 1px 1px 3px 3px #ddd;
+  box-shadow:         1px 1px 3px 3px #ddd;
+}
