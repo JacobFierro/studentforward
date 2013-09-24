@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Student Video Blog - Michael Moreno"
+title:  "Video Blog: My First Days in College"
 date:   2013-08-20 
 categories: scholarship education vblog
-thumb: "service2.png"
+thumb: "2013-08-20-michael-vblog1.jpg"
 img: false
 video: "m-u6y4GzRuA"
 author: "Jacob Fierro"

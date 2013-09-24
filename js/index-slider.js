@@ -361,7 +361,7 @@ $(document).ready(function () {
             return false
         });
         var f = setInterval(function () {
-            i()
+            //i()
         }, 8000)
     }
     c();

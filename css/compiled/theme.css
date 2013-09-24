@@ -357,11 +357,65 @@ header {
         margin: 0 30px 0 0; }
   #footer .credits {
     margin-top: 20px; } }
+/* Bio Boxes
+-------------------------------------*/
+.people {
+  margin: 0; }
+  .people .row1 {
+    margin: 0 0 50px 0; }
+  .people .bio_box {
+    margin: 0; }
+    .people .bio_box img {
+      float: left; }
+    .people .bio_box .info {
+      float: left;
+      margin: 38px 0 0 22px; }
+      .people .bio_box .info p {
+        margin-bottom: 0; }
+        .people .bio_box .info p.name {
+          color: #333;
+          font-style: italic;
+          margin-bottom: 4px;
+          font-size: 21px; }
+        .people .bio_box .info p.area {
+          color: #98989A;
+          font-style: italic;
+          font-style: 16px;
+          margin-bottom: 18px; }
+      .people .bio_box .info a {
+        margin-right: 10px; }
+        .people .bio_box .info a span {
+          display: inline-block;
+          width: 33px;
+          height: 33px; }
+        .people .bio_box .info a:hover span.socialicons {
+          display: none; }
+        .people .bio_box .info a:hover span.socialicons_h {
+          display: inline-block !important; }
+      .people .bio_box .info span.ico1, .people .bio_box .info span.ico1h {
+        background-position: 0px 0px; }
+      .people .bio_box .info span.ico2, .people .bio_box .info span.ico2h {
+        background-position: -37px 0px; }
+      .people .bio_box .info span.ico3, .people .bio_box .info span.ico3h {
+        background-position: -75px 0px; }
+      .people .bio_box .info span.ico4, .people .bio_box .info span.ico4h {
+        background-position: -112px -1px; }
+      .people .bio_box .info span.ico5, .people .bio_box .info span.ico5h {
+        background-position: -151px 0px; }
+      .people .bio_box .info span.ico6, .people .bio_box .info span.ico6h {
+        background-position: -188px -1px; }
+      .people .bio_box .info span.ico7, .people .bio_box .info span.ico7h {
+        background-position: -226px 0px; }
+  .people .bio_boxr img {
+    margin-left: 12px; }
 
-/* Globals
--------------------------------------------------- */
-.boxshadow {
-  -moz-box-shadow:    1px 1px 3px 3px #ddd;
-  -webkit-box-shadow: 1px 1px 3px 3px #ddd;
-  box-shadow:         1px 1px 3px 3px #ddd;
-}
+.socialicons {
+  background: url("../../img/socialicons2.png") no-repeat;
+  width: 265px;
+  height: 36px; }
+
+.socialicons_h {
+  background: url("../../img/socialicons_h.png") no-repeat;
+  width: 265px;
+  height: 36px;
+  display: none !important; }
