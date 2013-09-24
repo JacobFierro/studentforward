@@ -7,6 +7,7 @@ thumb: "2013-macbook-scholarship-thumb.jpg"
 img: "2013-macbook-scholarship.jpg"
 author: "Jacob Fierro"
 author_title: "Director"
+excerpt: "We are very pleased to announce Michael Moreno as our first ever recipient of the Helen P. Fierro Award, our annual technology in arts scholarship. Michael will recieve a 2013 Macbook Pro to take with him to college."
 ---
 
 <div class="row people">
