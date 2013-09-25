@@ -8,68 +8,68 @@ mentor_rows:
  - 
    mentors: 
      - 
+       name: "Jacob Fierro"
+       title: "Founder, Student Forward"
+       img: "jacob_fierro.png"
+     - 
        name: "Virgil Wong"
-       img: "/img/ale.png"
+       title: "Entrepreneur, Artist, Researcher"
+       img: "virgil_wong.png"
+ - 
+   mentors: 
      - 
        name: "Jorge Padilla"
-       img: "/img/ale.png"
+       title: "PhD Candidate, UC Berkeley"
+       img: "jorge_padilla.png"
+     - 
+       name: "Vijay Chemburkar"
+       title: "Software Engineer, New Dad"
+       img: "vijay_chemburkar.png"
  - 
    mentors: 
      - 
        name: "Phyllis Chen"
-       img: "/img/ale.png"
+       title: "Toy Pianist, Composer"
+       img: "phyllis_chen.png"
      - 
-       name: "Vijay Chemburkar"
-       img: "/img/ale.png"
+       name: "Tim McEvoy"
+       title: "UX Architect, American Express"
+       img: "tim_mcevoy.png"
+ - 
+   mentors: 
+     - 
+       name: "Joel Gillman"
+       title: "Developer/Co-founder, goldbely.com"
+       img: "joel_gillman.png"
+     - 
+       name: "Noah Miller"
+       title: "Design Director, Columbia Med School"
+       img: "noah_miller.png"
 ---
 
-<!-- {
-    "mentor_rows": [{
-        "mentors": [{
-            "name": "Virgil Wong",
-            "img": "/img/ale.png"
-        },{
-            "name": "Jorge Padilla",
-            "img": "/img/ale.png"
-        }]
-    },{
-        "mentors": [{
-            "name": "Phyllis Chen",
-            "img": "/img/ale.png"
-        },{
-            "name": "Vijay Chemburkar",
-            "img": "/img/ale.png"
-        }]
-    }]   
-}
- -->
+
 <div id="aboutus">
     <div class="container">
         <div class="section_header">
-            <h3>Mentorship Program</h3>
+            <h3>Art & Technology Mentorship Program</h3>
         </div>
         <div class="row">
-            <div class="col-sm-6 intro">
-                <h6>There are many variations of passages Lorem Ipsum available, injected generators on the hidden.</h6>
-                <p>
-                    There are many variations of passages of Lorem Ipsum available, injected 
-                    generators on the  embarrassing hidden in the middle all the dictionary making it look like readable English. Many desktop publishing packages and web page editors.
-                    <br /><br />
-                    There are many variations of passages of Lorem Ipsum available, but the ndictionary of over 200 Latin words, combined with a handful of models The generated Lorem Ipsum is therefore always free from repetition, the injected humour, or non-characteristic words etc.</p>
+            <div class="col-sm-8 intro">
+                <h6>Offering personal attention with a focus on post-collegiate, professional success.</h6>
+                
+                <p>The Student Forward mentorship program offers students a way to leverage the experience of successful professionals working somewhere on the art-technology spectrum to prepare for their own careers.</p>
+
+                <h6>Long-term Personal Attention</h6>
+                <p>Each student in the mentorshp program is paired with a long-term mentor that helps students navigate the rigours of college life and make smart choices early on. This mentor is with the student for the entirety of their collegiate career and is available to field more general questions as they arise.</p>
+
+                <h6>Mentor Network</h6>
+                <p>We also provide access to an amazing network of working professionals. Students can ask questions, discover unrealized opportunities and prepare for their career. These mentor sessions are spread over several years allowing the student to mature their thoughts and questions as they grow, ensuring they can reap the most from their mentor's valuable experience and insight. The mentors in this area of the program are more specifically focused on assisting the student prepare for a career in art, technology or both.</p>
             </div>
-            <div class="col-sm-6">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                          <img src="/img/about_slide1.jpg" />
-                        </li>
-                        <li>
-                          <img src="/img/about_slide1.jpg" />
-                        </li>
-                        <li>
-                          <img src="/img/about_slide1.jpg" />
-                        </li>
-                    </ul>
+            <div class="col-sm-4">
+                <div class="sidebarquote">
+                    <h2>Words of Wisdom</h2>
+                    <blockquote>Embrace the triumphs and disappointments all along your journey as you develop into your own true artist.  Remember that there are no secrets or short-cuts that will help you achieve your goals - only hard work, patience, perseverance, awareness, education, honesty and passion.</blockquote>
+                    <p class="author">Jorge Padilla<br>Excerpt from an email to a student</p>
                 </div>
             </div>
         </div>
@@ -88,11 +88,11 @@ mentor_rows:
 
                     {% for mentor in row.mentors %}
                         <div class="col-sm-6 bio_box">
-                            <img src="{{ mentor.img }}" alt="">
+                            <img src="/img/people/{{ mentor.img }}" alt="">
                             <div class="info">
                                 <p class="name">{{ mentor.name }}</p>
-                                <p class="area">Creative Director</p>
-                                <a href="#" class="facebook">
+                                <p class="area">{{ mentor.title }}</p>
+                                <!-- <a href="#" class="facebook">
                                     <span class="socialicons ico1"></span>
                                     <span class="socialicons_h ico1h"></span>
                                 </a>
@@ -106,7 +106,7 @@ mentor_rows:
                                 </a>
                                 <a href="#" class="dribble">
                                     <span class="socialicons ico6"></span>
-                                    <span class="socialicons_h ico6h"></span>
+                                    <span class="socialicons_h ico6h"></span> -->
                                 </a>
                             </div>
                         </div>
@@ -117,4 +117,8 @@ mentor_rows:
         {% endfor %}
 
     </div>
-</div>                  
+</div>    
+
+
+
+
