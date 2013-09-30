@@ -305,9 +305,10 @@ $(document).ready(function () {
             })
         }
         $(".slide:first").addClass("active").fadeIn(500, "easeInOutQuad", function () {
-            $("#slide-left, #slide-right, #pagination").fadeIn(200, "easeInOutQuad", function () {
-                j()
-            })
+            // $("#slide-left, #slide-right, #pagination").fadeIn(200, "easeInOutQuad", function () {
+            //     j()
+            // })
+            j()
         });
         $("#pagination li").not("active").click(function () {
             clearInterval(f);
