@@ -196,13 +196,13 @@
         &#mission {
             .info {
                 position: absolute;
-                top: 165px;
+                top: 130px;
                 right: 9%;
                 width: 33%;
 
                 h2 {
                     color: $text-dark;
-                    font-size: 47px;
+                    font-size: 37px;
                     font-weight: normal;
                     text-shadow: 1px 1px 1px #3b3262;
                     line-height: 45px;
@@ -214,6 +214,10 @@
 
                 p {
                     color: $text-dark;
+                }
+
+                div {
+                    // margin-top: 30px;
                 }
             }
         }
