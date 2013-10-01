@@ -1,0 +1,108 @@
+---
+layout: page
+title: Blog
+page_css: "blog.css"
+content_id: "blog"
+active: "blog"
+---
+<div class="container">
+    <div class="section_header">
+        <h3>Blog</h3>
+
+        <!-- <input type="text" class="search-query form-control" placeholder="Search"> -->
+    </div>
+
+    <!-- get the number of posts for this page -->
+    {% for post in paginator.posts limit:1 %}
+        {% assign num_posts = forloop.length %}
+    {% endfor %}
+
+    <!-- find out how many rows, drops remainder -->
+    {% if num_posts < 4 %}
+        {% assign num_rows = 1 %}
+    {% else %}
+        {% assign num_rows = (num_posts | 3) | plus:1 %}
+    {% endif %}
+
+    <!-- build rows -->
+    {% for i in (1..num_rows) %}
+        {% if i == 1 %}
+            {% assign p_offset = 0 %}
+        {% else %}
+            {% assign p_offset = 3 %}
+        {% endif %}
+
+        <!-- Post Row -->
+        <div class="row post_row">
+            {% for post in paginator.posts limit:3 offset:p_offset %}
+
+                <!-- Post -->
+                <div class="col-sm-4">
+                    <div class="post">
+                        <div class="img">
+                            <a href="{{ post.url }}">
+                                <img src="/img/posts/{{ post.thumb }}" alt="" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="text">
+                            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                            <span class="date">{{ post.date | date_to_string }}</span>
+                            <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                        </div>
+                        <div class="author_box">
+                            <h6>{{ post.author }}</h6>
+                            <p>{{ post.author_title }}</p>
+                        </div>
+                        <a class="plus_wrapper" href="{{ post.url }}">
+                            <span>&#43;</span>
+                        </a>
+                    </div>
+                </div>
+
+            {% endfor %}
+        
+        </div>
+    {% endfor %}
+
+
+
+    <!-- Pagination links -->
+    <div class="paginator-container">
+        <ul class="pagination">
+            {% if paginator.previous_page %}
+                {% if paginator.previous_page == 1 %}
+                    <li><a href="/blog/" class="previous">Prev</a></li>
+                {% else %}
+                    <a href="{{ paginator.previous_page_path }}" class="previous">Prev</a>
+                {% endif %}
+            {% else %}
+                <li><span class="previous">Prev</span></li>
+            {% endif %}
+
+
+            {% if paginator.page == 1 %}
+                <li><span>1</span></li>
+            {% else %}
+                <li><a href="/blog/">1</a></li>
+            {% endif %}
+
+
+            {% for i in (2..paginator.total_pages) %}
+                <li>
+                    {% if i == paginator.page %}
+                        <span>{{ i }}</span>
+                    {% else %}
+                        <a href="/blog/page{{ i }}/">{{ i }}</a></li>
+                    {% endif %}
+                </li>
+            {% endfor %}
+
+            {% if paginator.next_page %}
+                <li><a href="/page{{ paginator.next_page }}/" class="next">Next</a></li>
+            {% else %}
+                <li><span class="next">Next</span></li>
+            {% endif %}
+        </ul>
+    </div>              
+
+</div> <!-- #container -->

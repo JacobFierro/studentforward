@@ -1,0 +1,48 @@
+---
+layout: default
+page_css: "blogpost.css"
+active: "blog"
+---
+
+<div id="blog_post">
+    <div class="container">
+        <div class="section_header">
+            <h3>Blog Post</h3>
+
+            <input type="text" class="search-query form-control" placeholder="Search">
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+
+                {% if page.img != false %}
+                    <img class="post_pic img-responsive" src="/img/posts/{{ page.img }}" />
+                {% endif %}
+
+                {% if page.video %}
+                    <iframe width="671" height="503" src="//www.youtube.com/embed/{{ page.video }}?rel=0" frameborder="0" allowfullscreen></iframe>
+                {% endif %}
+
+                <div class="post_content">
+                    <h2>{{ page.title }}</h2>
+                    <span class="date">{{ page.date | date_to_string }}</span>
+
+                    {{content}}
+
+                    {% if page.author != empty %}
+                    <div class="author_box">
+                        <div class="author">{{ page.author }}</div>
+                        <div class="area">{{ page.author_title }}</div>
+                    </div>
+                    {% endif %}
+                </div><!-- .post_content -->
+            </div>
+            <div class="col-sm-4">
+                <!-- {% include post_sidebar.html %} -->
+
+            </div>
+        </div><!-- .row -->
+
+        
+    </div>
+</div>

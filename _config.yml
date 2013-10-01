@@ -1,0 +1,6 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+paginate: 6
+paginate_path: "blog/page:num"
+posts_in_row: 3

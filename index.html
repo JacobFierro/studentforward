@@ -1,0 +1,38 @@
+---
+layout: homepage
+title: Student Forward
+active: "home"
+---
+
+<div id="showcase">
+    <div class="container">
+        <div class="section_header">
+            <a href="/blog/" class="pull-right button">read more</a>
+            <h3>Recent Events</h3>
+        </div>
+        <div class="row feature_wrapper">
+            <!-- Features Row -->
+            <div class="features_op1_row">
+
+                {% for post in site.posts limit:3 %}
+                <!-- Feature -->
+                <div class="col-sm-4 feature first">
+                    <div class="img_box">
+                        <a href="{{ post.url }}">
+                            <img src="/img/posts/{{ post.thumb }}">
+                            <span class="circle"> 
+                                <span class="plus">&#43;</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h6>{{ post.title }}</h6>
+                        <p>{{ post.date | date_to_string }} </p>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div><!-- .row -->
+    </div>
+</div><!-- #news -->

@@ -1,0 +1,130 @@
+---
+layout: default
+title: Mentors
+page_css: "about.css"
+content_id: "aboutus"
+active: "mentorship"
+active_parent: "programs"
+mentor_rows: 
+ - 
+   mentors: 
+     - 
+       name: "Jacob Fierro"
+       title: "Founder, Student Forward<br>Web Developer"
+       img: "jacob_fierro.png"
+     - 
+       name: "Virgil Wong"
+       title: "Entrepreneur, Artist, Researcher"
+       img: "virgil_wong.png"
+ - 
+   mentors: 
+     - 
+       name: "Jorge Padilla"
+       title: "PhD Candidate, UC Berkeley"
+       img: "jorge_padilla.png"
+     - 
+       name: "Vijay Chemburkar"
+       title: "Software Engineer, New Dad"
+       img: "vijay_chemburkar.png"
+ - 
+   mentors: 
+     - 
+       name: "Phyllis Chen"
+       title: "Toy Pianist, Composer"
+       img: "phyllis_chen.png"
+     - 
+       name: "Tim McEvoy"
+       title: "UX Architect, American Express"
+       img: "tim_mcevoy.png"
+ - 
+   mentors: 
+     - 
+       name: "Joel Gillman"
+       title: "Developer/Co-founder, goldbely.com"
+       img: "joel_gillman.png"
+     - 
+       name: "Noah Miller"
+       title: "Design Director, Columbia Med School"
+       img: "noah_miller.png"
+---
+
+
+<div id="aboutus">
+    <div class="container">
+        
+        <div class="section_header">
+            <h3>Art & Technology Mentorship Program</h3>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-8 intro">
+                <h6>An undergraduate program offering long-term, personalized attention with a focus on post-collegiate professional success.</h6>
+                
+                <p>The Student Forward Art & Technology Mentorship Program offers students a way to leverage the knowledge and experience of modern working professionals. Each mentor is currently working somewhere on the art-technology spectrum and provides invaluable insight and guidance.</p>
+
+                <h6>Long-term Personal Attention</h6>
+                <p>Each student in the mentorshp program is paired with a long-term mentor that helps students navigate the rigours of college life and make smart choices early on. This mentor is with the student for the entirety of their collegiate career and is available to field more general questions as they arise.</p>
+
+                <h6>Mentor Network</h6>
+                <p>We also provide access to an amazing network of working professionals. Students can ask questions, discover unrealized opportunities and prepare for their career. These mentor sessions are spread over several years allowing the student to mature their thoughts and questions as they grow, ensuring they can reap the most from their mentor's valuable experience and insight. The mentors in this area of the program are more specifically focused on assisting the student prepare for a career in art, technology or both.</p>
+            </div>
+            <div class="col-sm-4 sidebar">
+                <div class="sidebarquote">
+                    <h4>Mentor Quotes</h4>
+                    <p><em>The following is an excerpt from an actual email to a student:</em></p>
+                    <blockquote>Embrace the triumphs and disappointments all along your journey as you develop into your own true artist.  Remember that there are no secrets or short-cuts that will help you achieve your goals - only hard work, patience, perseverance, awareness, education, honesty and passion.
+                      <p class="author">- Jorge Padilla<br></p>
+                    </blockquote>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="team">
+    <div class="container">
+        <div class="section_header">
+            <h3>Our Mentors</h3>
+        </div>
+
+        {% for row in page.mentor_rows %}
+            <div class="row people">
+                <div class="row row1">
+
+                    {% for mentor in row.mentors %}
+                        <div class="col-sm-6 bio_box">
+                            <img src="/img/people/{{ mentor.img }}" alt="">
+                            <div class="info">
+                                <p class="name">{{ mentor.name }}</p>
+                                <p class="area">{{ mentor.title }}</p>
+                                <!-- <a href="#" class="facebook">
+                                    <span class="socialicons ico1"></span>
+                                    <span class="socialicons_h ico1h"></span>
+                                </a>
+                                <a href="#" class="twitter">
+                                    <span class="socialicons ico2"></span>
+                                    <span class="socialicons_h ico2h"></span>
+                                </a>
+                                <a href="#" class="flickr">
+                                    <span class="socialicons ico4"></span>
+                                    <span class="socialicons_h ico4h"></span>
+                                </a>
+                                <a href="#" class="dribble">
+                                    <span class="socialicons ico6"></span>
+                                    <span class="socialicons_h ico6h"></span> -->
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                </div><!-- .row1 -->
+            </div><!-- .row .people -->
+        {% endfor %}
+
+    </div>
+</div>    
+
+
+
+
